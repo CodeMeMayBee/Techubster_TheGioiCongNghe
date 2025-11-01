@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /* General Color */
+    --background-color: #F9FAFB;
+    --primary-color: #56d3cb;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+
+    /* Light Mode Color */
+    --text-navbar-color: #424D58;
+    --border-line-color: rgb(230, 230, 230);
+    --divider-line-color-vertical: #aaa;
+
+    /* Dark Mode Color */
+
+
+    /* Font */
+    --font-navbar-text: "Inter", sans-serif;
+    --font-header-logo: "Pacifico", sans-serif;
+
+    /* Width */
+    --header-width: calc(1340px / 3);
+}
+
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: var(--font-navbar-text);
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    background-color: transparent;
+    line-height: 1;
+    outline: none;
+}
+
+html {
+    background-color: var(--background-color) !important;
+    width: 1440px;
+    margin: 0 auto;
+}
