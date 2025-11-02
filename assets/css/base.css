@@ -14,9 +14,10 @@
     --text-navbar-color: #424D58;
     --border-line-color: rgb(230, 230, 230);
     --divider-line-color-vertical: #aaa;
+    --categories-hover: #f2f2f3;
+    --icon-down-color: #a1a1aa;
 
     /* Dark Mode Color */
-
 
     /* Font */
     --font-navbar-text: "Inter", sans-serif;
@@ -24,6 +25,9 @@
 
     /* Width */
     --header-width: calc(1340px / 3);
+
+    /* Shadow */
+    --tw-shadow: 0 4px 20px -8px #0000001c,0 0 10px 0 #0000000f;
 }
 
 *, html {
@@ -42,6 +46,7 @@
 
 html {
     background-color: var(--background-color) !important;
-    width: 1440px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
