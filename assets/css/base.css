@@ -16,6 +16,7 @@
     --divider-line-color-vertical: #aaa;
     --categories-hover: #f2f2f3;
     --icon-down-color: #a1a1aa;
+    --offer-color: rgb(240, 240, 240);
 
     /* Dark Mode Color */
 
@@ -25,6 +26,7 @@
 
     /* Width */
     --header-width: calc(1340px / 3);
+    --offer-height: calc(400px - 162px);
 
     /* Shadow */
     --tw-shadow: 0 4px 20px -8px #0000001c,0 0 10px 0 #0000000f;
