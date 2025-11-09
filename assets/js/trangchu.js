@@ -6,4 +6,29 @@ window.addEventListener("DOMContentLoaded", function() {
         addImgBanner(imglink, imglink);
     }
     bannerSwiper(".banner__large-swiper", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev"); //Animation Banner
+
+    updateProgress();
+
+    const items = document.querySelectorAll(".header__campaigns-item");
+    const underline = document.querySelector(".header__underline");
+
+    function updateUnderline(activeItem) {
+        const { offsetLeft, offsetWidth } = activeItem;
+        underline.style.left = `${offsetLeft}px`;
+        underline.style.width = `${offsetWidth}px`;
+    }
+
+    // Khởi tạo thanh underline cho item active ban đầu
+    updateUnderline(document.querySelector(".header__campaigns-item.active"));
+
+    items.forEach(item => {
+        item.addEventListener("click", () => {
+            // Xóa active của item cũ
+            document.querySelector(".header__campaigns-item.active").classList.remove("active");
+            // Thêm active cho item mới
+            item.classList.add("active");
+            // Cập nhật thanh underline
+            updateUnderline(item);
+        });
+    });
 });

@@ -33,3 +33,14 @@ function bannerSwiper(idSwiper, swiperPagination, swiperBtnNext, swiperBtnPrev) 
     });
 }
 
+function updateProgress(totalSold) {
+    let sold = 0;
+    const total = totalSold;
+
+    const fill = document.querySelector(".flashsale__progress-fill");
+    const soldText = document.querySelector(".flashsale__progress-text .sold");
+
+    const percent = (sold / total) * 100;
+    fill.style.width = percent + "%";
+    soldText.textContent = sold;
+}

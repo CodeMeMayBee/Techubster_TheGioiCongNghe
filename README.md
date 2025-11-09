@@ -1,1 +1,2 @@
 # Techubster_TheGioiCongNghe
+## Real Project. A complete sample e-commerce website built for learning purposes. It features a modern, responsive design with product catalog, detailed product pages, shopping cart, and checkout system. Created solely for educational use and not intended for commercial purposes.

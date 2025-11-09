@@ -5,7 +5,7 @@
 :root {
     /* General Color */
     --background-color: #F9FAFB;
-    --primary-color: #56d3cb;
+    --primary-color: rgb(86, 211, 203);
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
@@ -17,6 +17,11 @@
     --categories-hover: #f2f2f3;
     --icon-down-color: #a1a1aa;
     --offer-color: rgb(240, 240, 240);
+    --separator-color: #aaaaaa;
+    --deal-border-color: #ffe0db;
+    --flashsale-period-color: #f5babc;
+    --flashsale-timer-color: #db182f;
+    --favorite-color: #609af7;
 
     /* Dark Mode Color */
 
@@ -44,6 +49,7 @@
     background-color: transparent;
     line-height: 1;
     outline: none;
+    user-select: none;
 }
 
 html {
